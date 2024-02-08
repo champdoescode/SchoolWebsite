@@ -1,0 +1,262 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navigation{
+    background-color: rgb(117, 30, 30 ) !important;
+    box-shadow: 3px 4px 6px 1px rgb(0 0 0 / 10%);
+}
+.navbar-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.toggle-btn{
+    display: flex;
+    justify-content: right;
+}
+.navbar-login{
+    padding: 0;
+}
+
+.sidebar{
+    width: 30%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(201, 201, 201);
+}
+.nav-itemss{
+    display: none;
+}
+.school-img-body{
+    display: block;
+}
+
+/* @media screen(max width: 1024px){
+    .sidebar{
+        display : none
+    }
+} */
+
+
+@media screen and (max-width: 1024px - 768px){
+    
+}
+
+.heading{
+    font-size: 32px;
+}
+.paragraph{
+    font-size: 16px;
+}
+.home-content{
+    width: 100%;
+    height: calc(70vh - 56px);
+    display: flex;
+}
+
+.home-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+.home-txt-box{
+    width: 70%;
+    padding: 8px 16px;
+}
+.readMore-btn-box{
+    margin-top: 16px;
+}
+.readMore-btn{
+    padding: 8px 16px;
+    background-color: rgb(117, 30, 30);
+    color: white;
+    border-radius: 4px;
+}
+.readMore-btn:hover{
+    color: white;
+    text-decoration: underline;
+}
+.school-img-body{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.school-img{
+    width: 100%;
+    height: 80%;
+    border-radius: 8px;
+}
+.facilities-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 40px;
+}
+
+.facilities-box{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+  flex-direction: column;
+  margin-left: 16px;
+
+  justify-content: space-between;
+  background-color: white;
+  height: fit-content;
+  width: fit-content;
+  margin: 0px 32xpx;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+}
+.box-txt{
+    text-align: center;
+}
+
+.fac-icons{
+    height: 64px;
+    margin-top: -50px;
+}
+.facilities-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fac-heading{
+    font-weight: 700;
+    color: rgb(117, 30, 30);
+    margin-top: 8px;
+}
+.admission-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 40px;
+}
+.admission-box-1{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+  flex-direction: row;
+  margin-left: 32px;
+
+  justify-content: space-evenly;
+  background-color: white;
+  height: fit-content;
+  width: fit-content;
+  margin: 0px 32px;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+}
+.admission-box-2{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+  flex-direction: column;
+  margin-left: 16px;
+
+  justify-content: space-between;
+  background-color: white;
+  height: fit-content;
+  width: fit-content;
+  margin: 0px 32px;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+}
+.admission-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 64px;
+}
+.adm-heading{
+    font-weight: 700;
+    color: rgb(117, 30, 30);
+}
+.adm-btn-container{
+    font-weight: 700;
+    color: rgb(117, 30, 30);
+    margin-top: 16px;
+}
+.adm-icons-1{
+    height: 224px;
+}
+.adm-icons-2{
+    height: 170px;
+}
+
+.adm-btn{
+    padding: 8px 16px;
+    margin-top: 32px;
+    background-color: rgb(117, 30, 30);
+    color: white;
+    border-radius: 4px;
+}
+.adm-btn:hover{
+    color: white;
+    text-decoration: underline;
+    background-color: rgb(71, 18, 18);
+}
+
+
+
+
+@media screen and (min-width: 769px) {
+    .sidebar {
+      display: none;
+    }
+    .nav-itemss{
+        display: block;
+    }
+
+    
+    
+
+}
+@media screen and (max-width: 769px) {
+    
+    .school-img, .school-img-body {
+        display: none;
+    }
+    .home-txt{
+        width: 100%;
+        color: rgb(244, 253, 253);
+        font-weight: 500;
+        background-image: url("/Images/imagedark.jpg");
+        background-size: cover;
+        background-position-x: right;
+    }
+    .facilities-container{
+        display: grid;
+    }
+    .facilities-box{
+        margin-bottom: 12px;
+        margin-top: 64px;
+    }
+    .admission-container{
+        display: grid;
+        flex-wrap: wrap;
+    display: flex;
+        width: 100%;
+    }
+    .admission-box-1{
+        display: grid;
+        
+        margin-bottom: 32px;
+    }
+    .admission-box-1{
+        padding: 0;
+    }
+    
+
+}
